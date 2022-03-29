@@ -1,0 +1,33 @@
+.quadrato{
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+}
+
+.bianco{
+	background-color: #FFF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+}
+
+.rosso{
+	background-color: #F00;
+}
+
+.verde{
+	background-color: #0F0;
+}
+
+.blu{
+	background-color: #00F;
+}
+
+.giallo{
+	background-color: #FF0;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
