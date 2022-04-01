@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CommentoComponent } from './commento/commento.component';
-import { ListaComponent } from './lista/lista.component';   //è stato fatto il routing da angular//se non presente copiamo questa riga di codice dal file app.module.ts
+import { MioformComponent } from './mioform/mioform.component'; //copiarlo da app.module.ts oppure in alcuni snippet viene importato in automatico
+import { FormmultiploComponent } from './formmultiplo/formmultiplo.component';
 
 const routes: Routes = [
-  {path:'',component: ListaComponent},
-  {path:'commento',component: CommentoComponent},
-
-
-]; //definiamo il path di navigazione
+  {path:"", component: MioformComponent}, //quando aggiungo un path devo prendere e inserire nell' import da app.module.ts "import { MioformComponent } from './mioform/mioform.component';"
+  {path:"multiplo", component: FormmultiploComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
